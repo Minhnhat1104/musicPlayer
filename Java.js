@@ -16,6 +16,7 @@ const nextBtn = $('.btn-next')
 const randomBtn = $('.btn-random')
 const repeatBtn = $('.btn-repeat')
 const playlist = $('.playlist')
+const dashBoard = $('.dashboard')
 
 const app = {
     currentIndex: 5,
@@ -134,9 +135,10 @@ const app = {
         // xử lí phóng to, thu nhỏ
         document.onscroll = function() {
             const newCdWidth = cdWidth - window.scrollY
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            // const scrollTop = window.scrollY || document.documentElement.scrollTop;
             cd.style.width = newCdWidth > 0 ? newCdWidth+'px' : 0
             cd.style.opacity = newCdWidth / cdWidth
+
         }
 
         // xử lí khi click play
@@ -240,7 +242,7 @@ const app = {
         setTimeout(() => {
             $('.song.active').scrollIntoView({
                 behavior: 'smooth',
-                block: 'nearest'
+                block: 'end'
             })
         }, 300)
     },
