@@ -41,51 +41,64 @@ const app = {
 
     songs: [
     {
-      name: "Dio's Theme but it's EPIC VERSION",
+      name: "How you like that - BLACKPINK",
       singer: "Raftaar x Fortnite",
-      path: "./assests/audio/dio_s_theme_but_it_s_epic_version_feat_beast_titan_theme_jojo_x_aot_mashup_-938651083812224236.mp3",
-      image: "./assests/img/Dio.png"
+      path: "./assests/audio/blackpink_how_you_like_that_m_v_-6884133955864984281.mp3",
+      image: "./assests/img/musicDisk.jpg"
     },
     {
-      name: "Giorno's Theme but it's EPIC VERSION",
+      name: "Em thich - Thinh Suy",
       singer: "Raftaar x Salim Merchant x Karma",
-      path: "./assests/audio/giorno_s_theme_but_it_s_epic_version_-8419081268927556568.mp3",
-      image: "./assests/img/Dio.png"
+      path: "./assests/audio/em_thich_sean_x_lua_official_official_mv_lyric_-8215201216439477563.mp3",
+      image: "./assests/img/musicDisk.jpg"
     },
     {
-      name: "JJBA Stone Ocean: Jolyne Theme (Full Version) | EPIC HQ COVER",
+      name: "wishes - jamie miller",
       singer: "Raftaar x Brobha V",
-      path:"./assests/audio/jjba_stone_ocean_jolyne_theme_full_version_epic_hq_cover_-3823576432034659423.mp3",
-      image: "./assests/img/Dio.png"
+      path: "./assests/audio/jamie_miller_wishes_ost_music_video_3543177370419650960.mp3",
+      image: "./assests/img/musicDisk.jpg"
     },
     {
-      name: "Jonathan Joestar Theme but it's EPIC OVERDRIVE VERSION",
+      name: "money - LISA",
       singer: "Raftaar x Nawazuddin Siddiqui",
-      path: "./assests/audio/jonathan_joestar_theme_but_it_s_epic_overdrive_version_5695007905971304339.mp3",
+      path: "./assests/audio/lisa_money_exclusive_performance_video_-1082727760893603124.mp3",
       image:
-        "./assests/img/Dio.png"
+        "./assests/img/musicDisk.jpg"
     },
     {
-      name: "Josuke Theme but it's EPIC VERSION",
+      name: "happiness - olivia rodrigo",
       singer: "Raftaar",
-      path: "./assests/audio/josuke_theme_but_it_s_epic_version_feat_giorno_jotaro_theme_4894134593535635595.mp3",
+      path: "./assests/audio/olivia_rodrigo_happier_lyric_video_7694895301496382311.mp3",
       image:
-        "https://a10.gaanacdn.com/images/albums/72/3019572/crop_480x480_3019572.jpg"
+        "./assests/img/musicDisk.jpg"
     },
     {
-      name: "Jotaro Theme but it's EPIC VERSION (Star Platinum Over Heaven)",
+      name: "Gone - Rosé",
       singer: "Raftaar x kr$na",
-      path:
-      "./assests/audio/jotaro_theme_but_it_s_epic_version_yare_yare_daze_-2824756580420447017.mp3",
+      path: "./assests/audio/rose_gone_m_v_7283681006405481751.mp3",
       image:
-      "https://a10.gaanacdn.com/images/albums/72/3019572/crop_480x480_3019572.jpg"
+      "./assests/img/musicDisk.jpg"
     },
     {
-      name: "Pillar's theme",
+      name: "all too well 10 minute version (taylor’s version)",
       singer: "Raftaar x Harjas",
-      path: "./assests/audio/pillar_men_theme_but_it_s_epic_version_awaken_-9092928326350760432.mp3",
+      path: "./assests/audio/taylor_swift_all_too_well_10_minute_version_lyric_video_-935950175237079102.mp3",
       image:
-        "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
+        "./assests/img/musicDisk.jpg"
+    },
+    {
+        name: "tiny love - thịnh suy",
+        singer: "Raftaar x Harjas",
+        path: "./assests/audio/tiny_love_music_video_-4928404490503216136.mp3",
+        image:
+          "./assests/img/musicDisk.jpg"
+    },
+    {
+      name: "to the moon - hooliga",
+      singer: "Raftaar x Harjas",
+      path: "./assests/audio/to_the_moon_hooligan_official_lyric_video_7024310841466325340.mp3",
+      image:
+        "./assests/img/musicDisk.jpg"
     }
     ],
 
