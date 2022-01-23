@@ -17,6 +17,8 @@ const randomBtn = $('.btn-random')
 const repeatBtn = $('.btn-repeat')
 const playlist = $('.playlist')
 const dashBoard = $('.dashboard')
+const musicVolumeIcon = $('.volume')
+const volume = $('.volume-magnitude')
 
 const app = {
     currentIndex: 5,
@@ -134,6 +136,9 @@ const app = {
         const _this = this
         const cd = $('.cd')
         const cdWidth = cd.offsetWidth
+        const iconVolumeUp = $('.icon-volume-up')
+        const iconVolumeDown = $('.icon-volume-down')
+        const iconVolumeOff = $('.icon-volume-off')
 
         // xử lí cd quay / dừng
         const cdThumbAnimate = cdThumb.animate([
@@ -244,6 +249,32 @@ const app = {
 
 
             }
+        }
+
+        // xu li khi click volume
+        musicVolumeIcon.onclick = function(e) {
+            musicVolumeIcon.classList.toggle('active')
+        }
+        
+        // xu li khi thay doi volume
+        volume.onchange = function(e) {
+            console.log(e.target.value)
+            audio.volume = volume.value / 100
+            if (audio.volume === 0) {
+                $('.volume .active').classList.remove('active')
+                iconVolumeOff.classList.add('active')
+            }
+            else if (audio.volume < 0.5) {
+                $('.volume .active').classList.remove('active')
+                iconVolumeDown.classList.add('active')
+            }
+            else {
+                $('.volume .active').classList.remove('active')
+                iconVolumeUp.classList.add('active')
+            }
+        }
+        volume.onclick = function(e) {
+            e.stopPropagation()
         }
     },
     
