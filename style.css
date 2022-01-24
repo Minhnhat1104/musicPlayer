@@ -55,11 +55,13 @@
   header h4 {
     color: var(--primary-color);
     font-size: 12px;
+    padding: 0px 56px;
   }
   
   header h2 {
     color: var(--text-color);
     font-size: 20px;
+    padding: 0px 56px;
   }
   
   /* CD */
@@ -91,21 +93,37 @@
   
   .volume {
     position: absolute;
-    top: 24px;
-    right: 62px;
-    width: 10px;
+    top: 18px;
+    right: 0px;
     text-align: center;
+    background-color: var(--primary-color);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 52px;
   }
 
   .volume-magnitude {
     display: none;
     transform: rotate(90deg);
     position: absolute;
-    top: 90px;
-    left: -51px;
-    /* appearance: none; */
-    /* background-color: var(--primary-color); */
+    top: 108px;
+    left: -40px;
+    -webkit-appearance: none;
+    background-color: var(--white-color);
     color: var(--primary-color);
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    width: 130px;
+  }
+
+  .volume-magnitude::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    display: block;
+    border-radius: 999px;
     cursor: pointer;
   }
 
@@ -118,7 +136,7 @@
   .icon-volume-off {
     font-size: 28px;
     display: none;
-    color: var(--primary-color);
+    padding: 10px;
   }
 
   .icon-volume-up.active {

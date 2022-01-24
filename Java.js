@@ -46,61 +46,61 @@ const app = {
       name: "How you like that - BLACKPINK",
       singer: "Raftaar x Fortnite",
       path: "./assests/audio/blackpink_how_you_like_that_m_v_-6884133955864984281.mp3",
-      image: "./assests/img/musicDisk.jpg"
+      image: "./assests/img/howYouLikeThat.jpg"
     },
     {
       name: "Em thich - Thinh Suy",
       singer: "Raftaar x Salim Merchant x Karma",
       path: "./assests/audio/em_thich_sean_x_lua_official_official_mv_lyric_-8215201216439477563.mp3",
-      image: "./assests/img/musicDisk.jpg"
+      image: "./assests/img/emThich.jpg"
     },
     {
       name: "wishes - jamie miller",
       singer: "Raftaar x Brobha V",
       path: "./assests/audio/jamie_miller_wishes_ost_music_video_3543177370419650960.mp3",
-      image: "./assests/img/musicDisk.jpg"
+      image: "./assests/img/wishes-jamieMiller.jpg"
     },
     {
       name: "money - LISA",
       singer: "Raftaar x Nawazuddin Siddiqui",
       path: "./assests/audio/lisa_money_exclusive_performance_video_-1082727760893603124.mp3",
       image:
-        "./assests/img/musicDisk.jpg"
+      "./assests/img/Money.jpeg"
     },
     {
       name: "happiness - olivia rodrigo",
       singer: "Raftaar",
       path: "./assests/audio/olivia_rodrigo_happier_lyric_video_7694895301496382311.mp3",
       image:
-        "./assests/img/musicDisk.jpg"
+      "./assests/img/happiness.jpg"
     },
     {
       name: "Gone - Rosé",
       singer: "Raftaar x kr$na",
       path: "./assests/audio/rose_gone_m_v_7283681006405481751.mp3",
       image:
-      "./assests/img/musicDisk.jpg"
+      "./assests/img/Gone-Rose.jpg"
     },
     {
       name: "all too well 10 minute version (taylor’s version)",
       singer: "Raftaar x Harjas",
       path: "./assests/audio/taylor_swift_all_too_well_10_minute_version_lyric_video_-935950175237079102.mp3",
       image:
-        "./assests/img/musicDisk.jpg"
+      "./assests/img/allToWell - Taylor.png"
     },
     {
         name: "tiny love - thịnh suy",
         singer: "Raftaar x Harjas",
         path: "./assests/audio/tiny_love_music_video_-4928404490503216136.mp3",
         image:
-          "./assests/img/musicDisk.jpg"
+        "./assests/img/tinyLove.jpg"
     },
     {
       name: "to the moon - hooliga",
       singer: "Raftaar x Harjas",
       path: "./assests/audio/to_the_moon_hooligan_official_lyric_video_7024310841466325340.mp3",
       image:
-        "./assests/img/musicDisk.jpg"
+      "./assests/img/toTheMoon.jpg"
     }
     ],
 
@@ -258,8 +258,7 @@ const app = {
         
         // xu li khi thay doi volume
         volume.onchange = function(e) {
-            console.log(e.target.value)
-            audio.volume = volume.value / 100
+            audio.volume = Number(volume.value) / 100
             if (audio.volume === 0) {
                 $('.volume .active').classList.remove('active')
                 iconVolumeOff.classList.add('active')
@@ -273,6 +272,7 @@ const app = {
                 iconVolumeUp.classList.add('active')
             }
         }
+
         volume.onclick = function(e) {
             e.stopPropagation()
         }
