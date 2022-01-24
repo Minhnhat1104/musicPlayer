@@ -106,15 +106,15 @@
     display: none;
     transform: rotate(90deg);
     position: absolute;
-    top: 108px;
-    left: -40px;
+    top: 90px;
+    left: -22px;
     -webkit-appearance: none;
-    background-color: var(--white-color);
-    color: var(--primary-color);
+    background-color: #fff;
     border-radius: 8px;
     border: 2px solid var(--primary-color);
     cursor: pointer;
-    width: 130px;
+    width: 96px;
+    z-index: 1;
   }
 
   .volume-magnitude::-webkit-slider-thumb {
